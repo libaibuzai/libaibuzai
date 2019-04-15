@@ -3,7 +3,7 @@ layout:     post
 title:      "悼允上人"
 subtitle:   "冷淡仙人偏得道 买定西风一笑"
 date:       2019-03-23
-author:     "陈浩"
+author:     "释行海"
 header-mask: 0.9
 categories:
      - 诗
@@ -13,6 +13,8 @@ tags:
     - 诗
 ---
 
+
+**_`悼允上人`_**
 
 **[宋] 释行海**
 

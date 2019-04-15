@@ -14,7 +14,7 @@ tags:
 
 ---
 
-# 1. 顶层对象的属性
+#  顶层对象的属性
 顶层对象，在浏览器环境指的是window对象，在Node指的是global对象。ES5之中，顶层对象的属性与全局变量是等价的。
     
     window.a = 1;
@@ -39,7 +39,7 @@ tags:
     
    上面代码中，全局变量a由var命令声明，所以它是顶层对象的属性；全局变量b由let命令声明，所以它不是顶层对象的属性，返回undefined。
     
-## global 对象
+# global 对象
 ES5的顶层对象，本身也是一个问题，因为它在各种实现里面是不统一的。
 
 浏览器里面，顶层对象是window，但 Node 和 Web Worker 没有window。
@@ -96,13 +96,14 @@ Node 里面，顶层对象是global，但其他环境都不支持。
     
     
     
-` 感想：存在即合理 只是一个说辞 我们需要做的是不断的完善它，让它真的合理。毕竟罗马不是一日建成的！   
-`    
+# 感想：
+存在即合理 只是一个说辞 我们需要做的是不断的完善它，让它真的合理。毕竟罗马不是一日建成的！   
+   
  
  
- 这里有[var、let、const 区别？](https://www.jianshu.com/p/4e9cd99ecbf5)详尽对比和分析
+ 这里有[var、let、const 区别？](https://www.jianshu.com/p/4e9cd99ecbf5)详尽对比和分析，希望可以帮你更好的理解。
     
 
->如有侵权行为，请[点击这里](https://github.com/libaibuzai/libaibuzai/issues)联系我删除
+>>>>如有侵权行为，请[点击这里](https://github.com/libaibuzai/libaibuzai/issues)联系我删除
 
-[如发现疑问或者错误点击反馈](https://github.com/libaibuzai/libaibuzai/issues)
+>>>>[如发现疑问或者错误点击反馈](https://github.com/libaibuzai/libaibuzai/issues)

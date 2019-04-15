@@ -1,0 +1,74 @@
+---
+layout:     post
+title:      "angular控制器间的通讯"
+subtitle:   "侬今葬花人笑痴，他年葬侬知是谁"
+date:       2017-07-20
+author:     "幽僻处的行人"
+header-mask: 0.9
+categories:
+    - angular
+   
+catalog:    true
+
+tags:
+    - angular
+---
+
+### ng笔记broadcast&&on&&emit
+
+    <script>
+    varmyapp=angular.module('TestApp',['ng']);
+    myapp.controller('ParentCtrl',function($scope){
+        $scope.$on('to-child',function(e,d){
+            console.log('[ParentCtrl]to-child');
+        });
+        $scope.$on('to-parent',function(e,d){
+            console.log('[ParentCtrl]to-parent');
+        });})
+        myapp.controller('SelfCtrl',function($scope){
+            $scope.click=function(){
+                $scope.$broadcast('to-child','haha');
+                $scope.$emit('to-parent','hehe');}})
+                
+                myapp.controller('ChildCtrl',function($scope){
+                    $scope.$on('to-child',function(e,d){
+                    console.log('[ChildCtrl]to-child');
+                });
+                $scope.$on('to-parent',function(e,d){
+                        console.log('[ChildCtrl]to-parent');
+                });
+            })
+            myapp.controller('BroCtrl',function($scope){
+                $scope.$on('to-child',function(e,d){
+                console.log('[BroCtrl]to-child');
+            });
+            $scope.$on('to-parent',function(e,d){
+                console.log('[BroCtrl]to-parent');
+            });
+        });
+        </script>
+        
+        
+        
+        
+        <div ng-controller="ParentCtrl">
+            <div ng-controller="SelfCtrl">
+                <a class="btn"ng-click="click()">clickme</a>
+                <div ng-controller="ChildCtrl">
+                    <span>{{great}}</span>
+                    <p>参数：{{canshu}}</p>
+                </div>
+            </div>
+            <div ng-controller="BroCtrl">{{text}}</div>
+        </div>
+                
+       
+# Notes
+       
+上面的例子可以看到，事件和事件发生者的兄弟是没有关系的，怎样都收不到。
+
+
+
+>    如有侵权行为，请[点击这里](https://github.com/libaibuzai/libaibuzai/issues)联系我删除
+
+>    [如发现疑问或者错误点击反馈](https://github.com/libaibuzai/libaibuzai/issues)

@@ -2,7 +2,7 @@
 layout:     post
 title:      "学习是一件逆人性的事"
 subtitle:   "冷淡仙人偏得道 买定西风一笑"
-date:       2017-9-13
+date:       2016-12-02
 author:     "陈浩"
 header-mask: 0.3
 categories:
