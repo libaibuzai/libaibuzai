@@ -1,0 +1,53 @@
+---
+layout:     post
+title:      "EVP_DecryptFinal_ex:bad decrypt 和 出现Illegal Buffer Error这种的情况"
+subtitle:   ""
+date:       2019-03-20
+author:     "幽僻处的行人"
+header-mask: 0.9
+categories:
+    - 小程序
+   
+catalog:    true
+
+tags:
+    - 小程序
+    - 小程序授权问题
+---
+
+### 看到这里 你的问题就不要担心了 大家的问题都是一样的。
+
+**官网的实例是没问题的** 
+
+- 当前 Bug 的表现 - 预期表现可以对encryptedData正常解密。
+
+- 复现路径点击登录按钮后，小程序本地数据缓存冷启动后还还会有吗，微信小程序教程。小程序调用wx.login()，再将code、iv、encrypedData一起发往后端程序，后端程序调用微信api接口（api.weixin.qq.com/sns/jscode2session）希望获取openId，但经常会出现上图中的错误。
+
+复现过程：
+
+    1、这个问题不是持续连续发生，而是在一段时间未操作小程序时，再次点击登录按钮触发登录操作的第一次时会发生，第二次及以后的登录操作则会成功。如果再过一段时间未操作小程序，当第一次登录的时候还是会出现这个现象——第一次登录不成功，后续登录操作可以成功。
+    2、问题的关键在于解密程序报错。将上述的ecryptedData、iv、session_key放入官方文档（貌似其中还有包括使用wx.getUserInfo()的描述，是否也要更新一下）中提供的demo.js程序运行，也会出现报错。
+
+# 下面是我的解决 ：
+
+- 一定要保证 新code的获取 在 getUserInfo或getPhoneNumber 之前
+
+- 而且 每一次解密授权所用的code 都不是一样的
+
+- onload里先进行wx.login 获取code，再通过按钮开始授权 获取iv和encryptedData     
+ 
+ 之后就不会报错了 O(∩_∩)O哈哈~
+ 
+这可能也是 小程序考虑授权先后出现的错误问题 才把全部授权按钮使用主动触发的方式的  
+
+
+
+解决方案的出处：
+https://developers.weixin.qq.com/community/develop/doc/000808d32c06101b39d6032c956000
+
+
+
+
+>    如有侵权行为，请[点击这里](https://github.com/libaibuzai/libaibuzai/issues)联系我删除
+
+>    [如发现疑问或者错误点击反馈](https://github.com/libaibuzai/libaibuzai/issues)
