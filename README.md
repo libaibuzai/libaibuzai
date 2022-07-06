@@ -21,12 +21,12 @@
 ![datav](https://img.shields.io/badge/datav-000?&logo=personio&labelColor=000)
 ![ueditor](https://img.shields.io/badge/ueditor-000?&logo=producthunt&labelColor=000)
 ![frontTracing](https://img.shields.io/badge/frontTracing-000?&logo=ethereum&labelColor=000)
-![frontTracing](https://img.shields.io/badge/performance-000?&logo=ethereum&labelColor=000)
+![performance](https://img.shields.io/badge/performance-000?&logo=ethereum&labelColor=000)
 
 ![JavaScript](https://img.shields.io/badge/偶尔:-red)
 ![Arduino](https://img.shields.io/badge/Arduino-000?&logo=Arduino&labelColor=000)
 ![APP-DEV](https://img.shields.io/badge/APP--DEV-000?logo=APPLE&labelColor=000)
-![BackEnd-DEV](https://img.shields.io/badge/树莓派--DEV-000?logo=linux&labelColor=000)
+![BackEnd-DEV](https://img.shields.io/badge/树莓派--DEV-000?logo=RaspberryPi&labelColor=A22846)
 
 **Framework**
 
