@@ -7,11 +7,11 @@
 ![JavaScript](https://img.shields.io/badge/日常:-red)
 ![JavaScript](https://img.shields.io/badge/JavaScript-000?&logo=JavaScript&labelColor=000)
 ![TypeScript](https://img.shields.io/badge/TypeScript-000?&logo=TypeScript&labelColor=000)
-![Nodejs   ](https://img.shields.io/badge/Nodejs%20%20%20%20-000?&logo=nodedotjs&labelColor=000)
+![Nodejs   ](https://img.shields.io/badge/Nodejs%20%20%20%20-000?&logo=Node.js&labelColor=000)
 
 ![JavaScript](https://img.shields.io/badge/偶尔:-red)
-![python](https://img.shields.io/badge/python-000?&logo=apple&labelColor=000)
-![Java](https://img.shields.io/badge/Java-000?&logo=Dart&labelColor=000)
+![python](https://img.shields.io/badge/python-000?&logo=Python&labelColor=000)
+![Java](https://img.shields.io/badge/Java-000?&logo=ethereum&labelColor=000)
 
 **Skill**
 
@@ -32,13 +32,13 @@
 
 ![Vue](https://img.shields.io/badge/Vue-000?&logo=Vuedotjs&labelColor=000)
 ![React](https://img.shields.io/badge/React-000?&logo=React&labelColor=000)
-![angularJS](https://img.shields.io/badge/angular-000?&logo=NextdotJS&labelColor=000)
-![layui](https://img.shields.io/badge/layui-000?&logo=webgl&labelColor=000)
+![angularJS](https://img.shields.io/badge/angular-000?&logo=angular&labelColor=DD0031)
+![layui](https://img.shields.io/badge/layui-000?&logo=ethereum&labelColor=000)
 
-![websocket.js](https://img.shields.io/badge/websocket-000?&logo=ethereum&labelColor=000)
+![websocket.js](https://img.shields.io/badge/websocket-000?&logo=Socket.io&labelColor=000)
 ![egg.js](https://img.shields.io/badge/egg-000?&logo=ethereum&labelColor=000)
 ![Hugo](https://img.shields.io/badge/Hugo-000?&logo=Hugo&labelColor=000)
-![webpack](https://img.shields.io/badge/webpack-000?&logo=Hugo&labelColor=000)
-![rollup](https://img.shields.io/badge/rollup-000?&logo=Hugo&labelColor=000)
+![webpack](https://img.shields.io/badge/webpack-000?&logo=Webpack&labelColor=000)
+![rollup](https://img.shields.io/badge/rollup-000?&logo=rollup.js&labelColor=000)
 
 ---
