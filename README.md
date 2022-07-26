@@ -25,7 +25,6 @@
 
 ![JavaScript](https://img.shields.io/badge/偶尔:-red)
 ![Arduino](https://img.shields.io/badge/Arduino-000?&logo=Arduino&labelColor=000)
-![APP-DEV](https://img.shields.io/badge/APP--DEV-000?logo=APPLE&labelColor=000)
 ![BackEnd-DEV](https://img.shields.io/badge/树莓派--DEV-000?logo=RaspberryPi&labelColor=A22846)
 
 **Framework**
